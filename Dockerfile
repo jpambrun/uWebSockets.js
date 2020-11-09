@@ -1,5 +1,6 @@
 FROM ubuntu
 RUN apt update && apt install -y clang build-essential libuv1-dev
+RUN apt install -y curl
 RUN mkdir -p /workdir
 WORKDIR /workdir
 RUN pwd
