@@ -11,5 +11,5 @@ build:
 	id=$$(docker create uws) && docker cp $$id:/workdir/dist /tmp/uws_dist && docker rm -v $$id
 	cp /tmp/uws_dist/*.node /tmp/uws_binaries/
 	cd /tmp/uws_binaries/
-	git commit . -m 'update bins'
-	git push
+	# git commit . -m 'update bins'
+	# git push

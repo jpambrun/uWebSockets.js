@@ -1,8 +1,6 @@
 FROM ubuntu
-RUN apt update && apt install -y clang build-essential libuv1-dev
+RUN apt update && apt install -y clang build-essential
 RUN apt install -y curl
-RUN apt install -y zlib1g-dev
-RUN apt install -y libssl-dev
 
 RUN mkdir -p /workdir
 WORKDIR /workdir
