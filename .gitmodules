@@ -1,3 +1,3 @@
 [submodule "uWebSockets"]
 	path = uWebSockets
-	url = https://github.com/virtalis/uWebSockets
+	url = https://github.com/jpambrun/uWebSockets
