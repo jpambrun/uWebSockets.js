@@ -1,5 +1,5 @@
-FROM node:15-buster
-RUN apt update && apt install -y clang
+FROM ubuntu
+RUN apt update && apt install -y clang build-essential
 RUN mkdir -p /workdir
 WORKDIR /workdir
 RUN pwd

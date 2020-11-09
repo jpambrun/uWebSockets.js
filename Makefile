@@ -3,6 +3,8 @@ default:
 	./a.out || build.exe
 
 build:
+	rm -Rf /tmp/uws_binaries
+	rm -Rf /tmp/uws_dist
 	git submodule update --init --recursive
 	docker build --progress plain . -t uws
 	git clone --depth 1 git@github.com:jpambrun/uWebSockets.js.git --branch binaries --single-branch /tmp/uws_binaries
